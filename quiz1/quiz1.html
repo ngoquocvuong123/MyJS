@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Quiz 1 — Vai trò JS, biến, toán tử</title>
+  <link rel="stylesheet" href="quiz1.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>📝 Bài 1 — Quiz nhanh</h1>
+    <p class="subtitle">Vai trò JS, biến, toán tử</p>
+
+    <div class="card">
+      <div class="question-number">Câu 1</div>
+      <h2>JavaScript trong trang web chủ yếu phụ trách gì?</h2>
+      <p class="answer">✅ <strong>Xử lý tương tác và hành vi</strong></p>
+      <p class="explain">HTML tạo cấu trúc, CSS lo giao diện/màu sắc, còn JavaScript xử lý logic, sự kiện và tương tác của người dùng.</p>
+    </div>
+
+    <div class="card">
+      <div class="question-number">Câu 2</div>
+      <h2>Từ khóa nào nên dùng cho giá trị không muốn gán lại?</h2>
+      <p class="answer">✅ <strong><code>const</code></strong></p>
+      <p class="explain"><code>const</code> khai báo hằng — không thể gán lại sau khi khởi tạo. Dùng <code>let</code> khi cần thay đổi, tránh <code>var</code> vì phạm vi dễ gây lỗi.</p>
+    </div>
+
+    <div class="card">
+      <div class="question-number">Câu 3</div>
+      <h2>Toán tử nào nên ưu tiên để so sánh nghiêm ngặt?</h2>
+      <p class="answer">✅ <strong><code>===</code></strong></p>
+      <p class="explain"><code>===</code> so sánh cả giá trị lẫn kiểu dữ liệu. <code>==</code> tự ép kiểu dễ sai, còn <code>=</code> là toán tử gán chứ không phải so sánh.</p>
+    </div>
+
+    <button id="toggleBtn" onclick="toggleExplain()">Ẩn giải thích</button>
+  </div>
+
+  <script src="quiz1.js"></script>
+</body>
+</html>
