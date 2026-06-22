@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bài 2 — Rẽ nhánh và lặp</title>
+  <link rel="stylesheet" href="control.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>⚙️ Bài 2 — Rẽ nhánh và lặp</h1>
+    <p class="subtitle">Nhập điểm, in xếp loại và tính tổng từ 1 đến 5</p>
+
+    <div class="section">
+      <h2>📌 TODO 1 — Xếp loại theo điểm</h2>
+      <div class="input-row">
+        <input type="number" id="scoreInput" placeholder="Nhập điểm (0–10)" min="0" max="10" step="0.1" />
+        <button onclick="checkScore()">Xếp loại</button>
+      </div>
+      <div id="scoreResult" class="result hidden"></div>
+    </div>
+
+    <div class="section">
+      <h2>📌 TODO 2 — In các số từ 1 đến 5</h2>
+      <button onclick="printNumbers()">In số</button>
+      <div id="numberResult" class="result hidden"></div>
+    </div>
+
+    <div class="section">
+      <h2>📌 TODO 3 — Tính tổng từ 1 đến 5</h2>
+      <button onclick="calcTotal()">Tính tổng</button>
+      <div id="totalResult" class="result hidden"></div>
+    </div>
+
+    <div class="section console-section">
+      <h2>🖥️ Console log</h2>
+      <pre id="consoleBox"></pre>
+    </div>
+  </div>
+
+  <script src="control.js"></script>
+</body>
+</html>
